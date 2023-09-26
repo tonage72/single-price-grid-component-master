@@ -43,7 +43,7 @@ main ul{
 
 /* first div */
 main ul:first-child {
-	background-color: rgb(247, 243, 243);
+	background-color: white;
 }
 
 /* second div */
