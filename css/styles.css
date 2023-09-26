@@ -20,19 +20,21 @@ html {
 }
 
 body {
+	display: grid;
+	place-content: center;
 	margin: 0 1.5rem;
 	background-color: hsl(204, 43%, 93%);
 	scrollbar-gutter: stable;
 }
 
 main {
-	/* height: 100vh; */
 	display: grid;
 	place-content: center;
 	grid-auto-flow: row;
 	margin-top: 3rem;
 	margin-bottom: 1rem;
 	border-radius: .3rem;
+	box-shadow: 0px 0px 15px rgb(180, 180, 180);
 }
 
 main ul{
@@ -136,6 +138,15 @@ ul:nth-child(3) li:first-child {
 
 @media (min-width: 376px) {
 	main {
-		grid-auto-flow: column;
+		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+		align-content: center;
+		margin-top: 20vh;
+		max-width: 600px;
+	}
+
+	/* first div */
+		main ul:first-child {
+		grid-column: span 2;
 	}
 }
