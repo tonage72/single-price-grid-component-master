@@ -22,27 +22,34 @@ html {
 body {
 	margin: 0 1.5rem;
 	background-color: hsl(204, 43%, 93%);
+	scrollbar-gutter: stable;
 }
 
 main {
-	height: 100vh;
+	/* height: 100vh; */
 	display: grid;
 	place-content: center;
 	grid-auto-flow: row;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	border-radius: .3rem;
 }
 
 main ul{
-	padding: 2rem 1rem 2rem 1rem;
+	padding: 1.5rem 1rem 1.5rem 1rem;
 }
 
+/* first div */
 main ul:first-child {
 	background-color: rgb(247, 243, 243);
 }
 
+/* second div */
 main ul:nth-child(2) {
 	background-color: hsl(179, 62%, 43%)
 }
 
+/* last div */
 main ul:nth-child(3) {
 	background-color: hsl(179, 52%, 57%);;
 }
@@ -52,13 +59,13 @@ ul:first-child li:first-child {
 	font-size: 1.5rem;
 	color: hsl(179, 62%, 43%);
 	font-weight: 700;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 }
 
 /* 30day... */
 ul:first-child li:nth-child(2) {
 	color: hsl(71, 73%, 54%);
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	font-weight: 700;
 }
 
@@ -77,27 +84,47 @@ ul:nth-child(2) li:first-child {
 
 /* $29... */
 ul:nth-child(2) li:nth-child(2) {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 	color: white;
 	font-size: 3rem;
+	margin-bottom: .5rem;
+}
+
+/* per month */
+ul:nth-child(2) li:nth-child(2) span {
+	font-size: 1rem;
+	color: white;
 }
 
 /* Full... */
 ul:nth-child(2) li:nth-child(3) {
 	color: white;
+	margin-bottom: 2rem;
 }
 
 /* Sign... */
 ul:nth-child(2) li:nth-child(4) {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	line-height: 3rem;
+	border-radius: .3rem;
+	background-color: hsl(71, 73%, 54%);
 	color: white;
 }
 
 /* Whole Why us ul */
 ul:nth-child(3) {
-	color: white;
+	color: hsl(204, 43%, 93%);
 }
 
 /* Why us */
 ul:nth-child(3) li:first-child {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
 	color: white;
 }
 
